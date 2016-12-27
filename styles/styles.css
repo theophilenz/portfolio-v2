@@ -1,5 +1,12 @@
 /*Styles généraux */
 
+.retour-accueil a {
+    display: inline-block;
+    color: white;
+    padding: 2px 15px;
+    background: #595959;
+}
+
 
 /*Styles de navigation */
 
@@ -25,52 +32,46 @@ nav i {
 
 /*###### Page d'accueil ####*/
 
-
-/*Styles du jumbotron */
-
-.jumbotron {
+.page-accueil .jumbotron {
     text-align: center;
     background-color: #fff;
     margin-bottom: 4%;
 }
 
-.display-3 {
+.page-accueil .display-3 {
     font-size: 4rem;
     font-weight: 300;
     margin-bottom: 3%;
     text-transform: uppercase;
 }
 
-.lead {
-    font-size: 2.5rem;
+.page-accueil .lead {
+    font-size: 2rem;
     font-weight: 200;
 }
 
-
-/*Contenu de la page Index.html*/
-
-.menu-accueil {
+.page-accueil .menu-accueil {
     text-align: center;
     font-weight: 200;
     font-size: 1.9rem;
     text-transform: uppercase;
 }
 
-.menu-accueil i {
+.page-accueil .menu-accueil i {
     font-size: 2.5rem;
     margin-right: 2%;
 }
 
-.menu-accueil div {
+.page-accueil .menu-accueil div {
     background-color: black;
 }
 
-.menu-accueil div:nth-child(2) {
+.page-accueil .menu-accueil div:nth-child(2) {
     border-left: 0.5px dashed #595959;
     border-right: 0.5px dashed #595959;
 }
 
-.menu-accueil a {
+.page-accueil .menu-accueil a {
     color: white;
     display: inline-block;
     width: 100%;
@@ -78,14 +79,56 @@ nav i {
     background-color: black;
 }
 
-.menu-accueil a:hover,
-.menu-accueil div:hover {
+.page-accueil .menu-accueil a:hover,
+.page-accueil .menu-accueil div:hover {
     color: black;
     background-color: white;
     text-decoration: none;
 }
 
-.titre-menu {
+.page-accueil .titre-menu {
     position: relative;
     top: 45%;
+}
+
+
+/*###### Page d'outils ####*/
+
+.page-outils .jumbotron {
+    text-align: center;
+    background-color: #fff;
+}
+
+.page-outils .jumbotron h1 {
+    font-size: 3rem;
+}
+
+.page-outils h2 {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.liste-outils {
+    text-align: center;
+}
+
+.liste-outils div {
+    background-color: black;
+    height: 130px;
+    border: 0.5px solid white;
+}
+
+.liste-outils div:hover {
+    background-color: #595959;
+}
+
+.liste-outils .outil {
+    margin-right: 15px;
+    color: #333333;
+    background-color: white;
+    padding: 1px 3px;
+    border-radius: 2px;
 }
