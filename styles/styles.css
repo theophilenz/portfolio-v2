@@ -65,6 +65,11 @@ nav i {
     background-color: black;
 }
 
+.menu-accueil div:nth-child(2) {
+    border-left: 0.5px dashed #595959;
+    border-right: 0.5px dashed #595959;
+}
+
 .menu-accueil a {
     color: white;
     display: inline-block;
