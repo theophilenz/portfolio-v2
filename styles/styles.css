@@ -14,6 +14,10 @@ nav a {
     color: #595959;
 }
 
+nav a:hover {
+    color: #bebebe;
+}
+
 nav i {
     margin: 0 4%;
 }
@@ -27,12 +31,13 @@ nav i {
 .jumbotron {
     text-align: center;
     background-color: #fff;
+    margin-bottom: 4%;
 }
 
 .display-3 {
     font-size: 4rem;
     font-weight: 300;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     text-transform: uppercase;
 }
 
@@ -44,14 +49,38 @@ nav i {
 
 /*Contenu de la page Index.html*/
 
-.outils .row-fluid {
+.menu-accueil {
     text-align: center;
-    background-color: #f0f0f0;
+    font-weight: 200;
+    font-size: 1.9rem;
+    text-transform: uppercase;
 }
 
-.col-md-3 {
-    text-align: center;
-    background-color: #f0f0f0;
-    font-size: 1.2rem;
-    padding: 1.5%;
+.menu-accueil i {
+    font-size: 2.5rem;
+    margin-right: 2%;
+}
+
+.menu-accueil div {
+    background-color: black;
+}
+
+.menu-accueil a {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 190px;
+    background-color: black;
+}
+
+.menu-accueil a:hover,
+.menu-accueil div:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+.titre-menu {
+    position: relative;
+    top: 45%;
 }
