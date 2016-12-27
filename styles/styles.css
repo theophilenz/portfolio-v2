@@ -1,16 +1,5 @@
 /*Styles généraux */
 
-body {
-    font-family: "Source Sans Pro", sans-serif;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 
 /*Styles de navigation */
 
@@ -41,27 +30,28 @@ nav i {
 }
 
 .display-3 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 300;
     margin-bottom: 2%;
+    text-transform: uppercase;
 }
 
 .lead {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 200;
 }
 
 
 /*Contenu de la page Index.html*/
 
-.outils {
+.outils .row-fluid {
     text-align: center;
-    margin-top: 1%;
+    background-color: #f0f0f0;
 }
 
 .col-md-3 {
     text-align: center;
     background-color: #f0f0f0;
-    font-size: 1.5rem;
-    padding: 2%;
+    font-size: 1.2rem;
+    padding: 1.5%;
 }
