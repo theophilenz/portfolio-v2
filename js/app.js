@@ -3,23 +3,23 @@ var app = angular.module('portfolioApp', ["ngRoute"])
 app.config(function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "/vues/accueil.html",
+            templateUrl: "./vues/accueil.html",
             controller: "ControlleurPageAccueil"
         })
         .when("/outils", {
-            templateUrl: "/vues/outils.html",
+            templateUrl: "./vues/outils.html",
             controller: "ControlleurPageOutils"
         })
         .when("/projets", {
-            templateUrl: "/vues/projets.html",
+            templateUrl: "./vues/projets.html",
             controller: "ControlleurPageProjets"
         })
         .when("/demande-cv", {
-            templateUrl: "/vues/demande-cv.html",
+            templateUrl: "./vues/demande-cv.html",
             controller: "ControlleurPageCV"
         })
         .otherwise({
-            redirectTo: "/"
+            redirectTo: "./"
         })
 
 });
