@@ -1,8 +1,7 @@
 /*Styles généraux */
 
 body {
-    background-image: url("/imgs/bg.jpg");
-    font-family: serif;
+    font-family: "Source Code Pro", sans-serif;
 }
 
 .retour-accueil a {
@@ -16,15 +15,13 @@ body {
 /*Styles de navigation */
 
 nav {
-    text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     border-bottom: 1px solid #b5b5b5;
-    box-shadow: 0px .5px 1px #b7b7b7;
-    background: white;
+    background: black;
 }
 
 nav a {
-    color: #595959;
+    color: white;
 }
 
 nav a:hover {
@@ -32,110 +29,52 @@ nav a:hover {
 }
 
 nav i {
-    margin: 0 4%;
+    margin: 0 2%;
 }
 
 
 /*###### Page d'accueil ####*/
 
-.jumbotron {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 6%;
-    color: white;
+.page-accueil h1 {
+    font-size: 5em;
 }
 
-.display-3 {
-    font-size: 4rem;
-    font-weight: 300;
-    margin-bottom: 3%;
-    text-transform: uppercase;
+.top {
+    border-bottom: 1px solid #b5b5b5;
 }
 
-.lead {
-    font-size: 2rem;
-    font-weight: 200;
+.page-accueil h2 {
+    font-size: 2em;
+    margin-top: -20px;
 }
 
-.menu-accueil {
-    text-align: center;
-    font-weight: 200;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+.page-accueil h3 {
+    font-size: 1.5em;
+    margin: 5vh 0;
 }
 
-.menu-accueil i {
-    font-size: 1.5rem;
-    margin-right: 2%;
+.page-accueil .section {
+    margin: 10vh 0;
 }
 
-.menu-accueil div {
-    background-color: black;
-}
 
-.menu-accueil div:nth-child(2) {
-    border-left: 0.5px dashed #595959;
-    border-right: 0.5px dashed #595959;
-}
+/*###Styles de la zone compétences ###*/
 
-.menu-accueil a {
-    color: white;
+.competence {
     display: inline-block;
-    width: 100%;
-    height: 120px;
     background-color: black;
+    padding: 20px;
+    margin: 5px 10px 5px 0;
+    color: #fff;
 }
 
-.menu-accueil a:hover,
-.menu-accueil div:hover {
-    color: black;
-    background-color: white;
-    text-decoration: none;
-}
-
-.titre-menu {
-    position: relative;
-    top: 35%;
+.competence:hover {
+    background-color: grey;
 }
 
 
-/*###### Page d'outils ####*/
+/*###Styles de la zone projets ###*/
 
-.page-outils .jumbotron {
-    text-align: center;
-    background-color: #fff;
-}
-
-.page-outils .jumbotron h1 {
-    font-size: 3rem;
-}
-
-.page-outils h2 {
-    text-align: center;
-    color: white;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
-.liste-outils {
-    text-align: center;
-}
-
-.liste-outils div {
-    background-color: black;
-    height: 130px;
-    border: 0.5px solid white;
-}
-
-.liste-outils div:hover {
-    background-color: #595959;
-}
-
-.liste-outils .outil {
-    margin-right: 15px;
-    color: #333333;
-    background-color: white;
-    padding: 1px 3px;
-    border-radius: 2px;
+.projet {
+    border: 1px solid black;
 }
