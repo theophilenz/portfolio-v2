@@ -14,23 +14,27 @@ app.config(function($routeProvider) {
 
 app.controller("ControlleurPageAccueil", ["$scope", function($scope) {
     $scope.competences = [{
-            nom: "HTML/CSS"
-        },
-        {
-            nom: "Javascript"
-        },
-        {
-            nom: "AngularJS"
-        },
-        {
-            nom: "jQuery"
-        }
-    ]
+        comp: "HTML/CSS",
+        niveau: "80%"
+    }, {
+        comp: "Javascript",
+        niveau: "50%"
+    }, {
+        comp: "jQuery",
+        niveau: "60%"
+    }, {
+        comp: "AngularJS",
+        niveau: "20%"
+    }];
     $scope.projets = [{
-            titre: "Zuo Design"
+            client: "Zuo Design",
+            src: "imgs/projets/zuo.png",
+            services: ["WordPress", "cPanel"]
         },
         {
-            titre: "Meddexx"
+            client: "Meddexx",
+            src: "imgs/projets/meddexx.png",
+            services: ["WordPress", "Yo"]
         }
     ]
 }]);

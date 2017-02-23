@@ -1,7 +1,7 @@
 /*Styles généraux */
 
 body {
-    font-family: "Source Code Pro", sans-serif;
+    font-family: "Roboto Mono", sans-serif;
 }
 
 .retour-accueil a {
@@ -14,29 +14,38 @@ body {
 
 /*Styles de navigation */
 
-nav {
+.navbar {
     font-size: 2em;
     border-bottom: 1px solid #b5b5b5;
     background: black;
+    padding: 0 2%;
 }
 
 nav a {
     color: white;
+    margin: 0 7%;
 }
 
 nav a:hover {
     color: #bebebe;
 }
 
-nav i {
-    margin: 0 2%;
+.dropdown {
+    display: inline-block;
 }
 
 
 /*###### Page d'accueil ####*/
 
+.page-accueil {
+    margin: 12vh 0;
+}
+
 .page-accueil h1 {
-    font-size: 5em;
+    font-size: 4em;
+    letter-spacing: -3px;
+    font-weight: 400;
+    margin-bottom: -1%;
 }
 
 .top {
@@ -44,28 +53,43 @@ nav i {
 }
 
 .page-accueil h2 {
-    font-size: 2em;
-    margin-top: -20px;
+    font-size: 1.5em;
+    letter-spacing: -2px;
 }
 
-.page-accueil h3 {
-    font-size: 1.5em;
-    margin: 5vh 0;
+h3 {
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+h3::before {
+    content: "> ";
 }
 
 .page-accueil .section {
-    margin: 10vh 0;
+    margin: 5vh 0;
+}
+
+
+/*À propos */
+
+.a-propos {
+    width: 90%;
 }
 
 
 /*###Styles de la zone compétences ###*/
 
 .competence {
-    display: inline-block;
     background-color: black;
-    padding: 20px;
+    list-style: none;
+    padding: 15px;
     margin: 5px 10px 5px 0;
     color: #fff;
+}
+
+.competences ul {
+    padding-left: 0;
 }
 
 .competence:hover {
@@ -76,5 +100,83 @@ nav i {
 /*###Styles de la zone projets ###*/
 
 .projet {
-    border: 1px solid black;
+    margin: 1%;
+    background-size: cover;
+}
+
+.titre-projet {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+}
+
+.projets ul {
+    margin-top: 5px;
+    display: inline-block;
+    padding: 0;
+}
+
+.technologie {
+    display: inline-block;
+    color: white;
+    background-color: #000;
+    padding: 3px;
+    margin: 0 3px;
+}
+
+
+/*Typed cursor */
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*@medias*/
+
+@media screen and (min-width: 1000px) {
+    .dropdown {
+        display: none;
+    }
 }

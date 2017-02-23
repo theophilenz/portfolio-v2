@@ -5,16 +5,30 @@
         </h1>
         <h2 class="lead">Jeune étudiant/développeur web de la ville de Québec.</h2>
     </div>
-    <div class="section competences" id="competences">
-        <h3>Mes outils de travail</h3>
-        <span class="competence" ng-repeat="competence in competences">{{competence.nom}}</span>
+    <div class="a-propos" id="a-propos">
+        <p>Je suis Théophile Nzungize (ou simplement Théo) et je suis présentement étudiant en développement web (chez moi).
+            <br>Durant mes études je travaille sur différents types de projets qui mettent à profit mes connaissances pratiques tant sur le développement qu'au design et au marketing web.
+        </p>
     </div>
-    <div class="section projets" id="projets">
-        <h3>Quelques projets</h3>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="col-sm-6 projet" ng-repeat="projet in projets">{{projet.titre}}</div>
+    <div class="row">
+        <div class="col-md-7 section projets" id="projets">
+            <h3>Quelques projets</h3>
+            <div class="row">
+                <div class="col-sm-5 projet" ng-repeat="projet in projets">
+                    <span class="titre-projet">{{projet.client}}</span>
+                    <img class="img-projet img-responsive" src="{{projet.src}}" />
+                    <ul ng-repeat="tech in projet.services">
+                        <li class="technologie">{{tech}}</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
+        <div class="col-md-5 section competences " id="competences ">
+            <h3>Mes compétences</h3>
+            <ul ng-repeat="competence in competences ">
+                <li class="competence " style="width:{{competence.niveau}}; ">{{competence.comp}}</li>
+            </ul>
+        </div>
     </div>
+
+</div>
