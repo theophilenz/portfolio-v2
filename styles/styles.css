@@ -127,6 +127,17 @@ h3::before {
 }
 
 
+/*footer */
+
+footer {
+    color: white;
+    background: #000;
+    text-align: center;
+    height: 5vh;
+    padding: 2% 0;
+}
+
+
 /*Typed cursor */
 
 .typed-cursor {

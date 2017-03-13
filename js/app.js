@@ -18,23 +18,31 @@ app.controller("ControlleurPageAccueil", ["$scope", function($scope) {
         niveau: "80%"
     }, {
         comp: "Javascript",
-        niveau: "50%"
+        niveau: "80%"
     }, {
         comp: "jQuery",
         niveau: "60%"
     }, {
         comp: "AngularJS",
-        niveau: "20%"
+        niveau: "60%"
+    }, {
+        comp: "MongoDB",
+        niveau: "40%"
+    }, {
+        comp: "NodeJS, Express",
+        niveau: "50%"
     }];
     $scope.projets = [{
             client: "Zuo Design",
             src: "imgs/projets/zuo.png",
-            services: ["WordPress", "cPanel"]
+            services: ["WordPress", "cPanel", "Hébergement"],
+            lien: "/#!/"
         },
         {
             client: "Meddexx",
             src: "imgs/projets/meddexx.png",
-            services: ["WordPress", "Yo"]
+            services: ["WordPress", "Logo", "Hébergement"],
+            lien: "/#!/"
         }
     ]
 }]);

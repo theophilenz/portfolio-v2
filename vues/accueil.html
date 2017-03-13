@@ -15,8 +15,8 @@
             <h3>Quelques projets</h3>
             <div class="row">
                 <div class="col-sm-5 projet" ng-repeat="projet in projets">
-                    <span class="titre-projet">{{projet.client}}</span>
-                    <img class="img-projet img-responsive" src="{{projet.src}}" />
+                    <a href="{{projet.lien}}"><span class="titre-projet">{{projet.client}}</span></a>
+                    <a href="{{projet.lien}}"><img class="img-projet img-responsive" src="{{projet.src}}" alt="{{projet.client}}" /></a>
                     <ul ng-repeat="tech in projet.services">
                         <li class="technologie">{{tech}}</li>
                     </ul>
